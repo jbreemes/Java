@@ -1,0 +1,18 @@
+Mechine taal bestaat meestal uit eentjes en nulletjes
+dus er wordt vaak gebruikt van een IDE om met de computer
+te communiceren en taken uitevoeren.
+
+Welke 3 hulpmiddelen heb je nodig om te progammeren
+1.	Een IDE (Integrated Development Environment) zoals Visual Studio, PhpStorm, Intellij IDEA.
+2.	Programeer taal zoals Java, C#, Etc.
+3.  Een laptop met de juiste specs.
+
+Hoe herken je opdrachten in de broncode
+Een lijn tekst dat een opdracht uitvoert.
+
+Waar dienen de import opdrachten voor?
+Zodat je gegevens uit java kunt halen of je kan een ander document
+samen voegen met je main document zodat ze samen gaan werken.
+
+Wat is een method?
+dat is een functie van een klasse
