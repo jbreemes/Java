@@ -10,7 +10,7 @@ public class Staafdiagram extends Applet {
     int Hans;
 
 
-    int Formule;
+    int Beginlijn;
 
 
     public void init() {
@@ -22,13 +22,13 @@ public class Staafdiagram extends Applet {
     }
 
     public void paint(Graphics g) {
+        //niet de 2 veranderen
+        Valery = 40                                       * 2;
+        Hans = 80                                         * 2;
+        Jeroen = 100                                      * 2;
 
-        Valery = 90 * 2;
-        Hans = 80  * 2;
-        Jeroen = 100 * 2;
 
-
-        Formule = 250;
+        Beginlijn = 250;
 
 
 
@@ -36,15 +36,15 @@ public class Staafdiagram extends Applet {
 
         // Valery
         g.setColor(Color.BLUE);
-        g.fillRect(90, Formule - Valery, 30, Valery);
+        g.fillRect(90, Beginlijn - Valery, 30, Valery);
 
         // Jeroen
         g.setColor(Color.BLACK);
-        g.drawRect(150, Formule - Hans, 30, Hans);
+        g.drawRect(150, Beginlijn - Hans, 30, Hans);
 
         // Hans
         g.setColor(Color.RED);
-        g.fillRect(210, Formule - Jeroen, 30, Jeroen);
+        g.fillRect(210, Beginlijn - Jeroen, 30, Jeroen);
 
         //nummers
         g.setColor(Color.black);
@@ -53,7 +53,7 @@ public class Staafdiagram extends Applet {
         g.drawString("40",35,175);
         g.drawString("60",35,135);
         g.drawString("80",35,95);
-        g.drawString("100",28,60);
+        g.drawString("100",28,55);
 
         //horizontal
         g.fillRect(50,50,2,200);
@@ -86,4 +86,3 @@ public class Staafdiagram extends Applet {
     }
 
 }
-
