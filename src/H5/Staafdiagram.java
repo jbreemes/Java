@@ -23,7 +23,7 @@ public class Staafdiagram extends Applet {
 
     public void paint(Graphics g) {
 
-        Valery = 40 * 2;
+        Valery = 90 * 2;
         Hans = 80  * 2;
         Jeroen = 100 * 2;
 
@@ -40,25 +40,20 @@ public class Staafdiagram extends Applet {
 
         // Jeroen
         g.setColor(Color.BLACK);
-        g.drawRect(150, Formule - Jeroen, 30, Jeroen);
+        g.drawRect(150, Formule - Hans, 30, Hans);
 
         // Hans
         g.setColor(Color.RED);
-        g.fillRect(210, Formule - Hans, 30, Hans);
+        g.fillRect(210, Formule - Jeroen, 30, Jeroen);
 
         //nummers
         g.setColor(Color.black);
         g.drawString("0",40,250);
-        g.drawString("10",40,220);
-        g.drawString("20",40,230);
-        g.drawString("30",35,220);
-        g.drawString("40",35,210);
-        g.drawString("50",35,200);
-        g.drawString("60",40,190);
-        g.drawString("70",40,180);
-        g.drawString("80",35,170);
-        g.drawString("90",35,160);
-        g.drawString("100",28,50);
+        g.drawString("20",35,215);
+        g.drawString("40",35,175);
+        g.drawString("60",35,135);
+        g.drawString("80",35,95);
+        g.drawString("100",28,60);
 
         //horizontal
         g.fillRect(50,50,2,200);
