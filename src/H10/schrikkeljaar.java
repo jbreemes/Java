@@ -14,7 +14,6 @@ public class schrikkeljaar extends Applet {
     String tekst;
     String tekst2;
     String s;
-    String Antw;
     int jaartal;
     int invoer;
 
@@ -26,15 +25,7 @@ public class schrikkeljaar extends Applet {
 
         add(jaar);
         add(tekstvak);
-        add(knop);
-
-
-
-
-
-
-
-        knop.addActionListener(new knoplistener());
+        add(knop);knop.addActionListener(new knoplistener());
     }
 
 
