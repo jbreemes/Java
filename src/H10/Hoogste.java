@@ -11,10 +11,10 @@ public class Hoogste extends Applet {
     int uitkomst;
 
     public void init(){
-        tekstvak = new TextField(5);
+        tekstvak = new TextField(10);
         tekstvak.addActionListener(new VakListener());
         add(tekstvak);
-        uitkomst = 0;
+        uitkomst = 10000;
 
     }
     public void paint(Graphics g){
@@ -26,12 +26,15 @@ public class Hoogste extends Applet {
 
             s = tekstvak.getText();
             getal = Integer.parseInt( s );
-            if (getal > uitkomst){
+            if (getal < uitkomst){
                 uitkomst = getal;
             }
-            else {
+            else{
+
+
 
             }
+
             repaint();
         }
     }

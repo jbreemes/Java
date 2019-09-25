@@ -1,41 +1,82 @@
 package Test;
 
+import java.applet.Applet;
 import java.awt.*;
-import java.applet.*;
-import java.awt.event.*;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class test extends Applet {
+
     TextField tekstvak;
-    Label label;
-    String s, tekst;
-    int jaartal;
-
+    Button knop;
+    int invoer;
+    String tekst;
+    String dag;
     public void init() {
-        tekstvak = new TextField("", 20);
-        label = new Label("Type een jaartal en druk op enter");
-        tekstvak.addActionListener( new TekstvakListener() );
-        tekst = "";
-        add(label);
+
+        tekstvak = new TextField(1);
+        knop = new Button("Bereken");
+
         add(tekstvak);
-    }
+        add(knop);
 
-    public void paint(Graphics g) {
-        g.drawString(tekst, 50, 60 );
+        knop.addActionListener(new knoplistener());
     }
+    public class knoplistener implements ActionListener {
 
-    class TekstvakListener implements ActionListener {
+
         public void actionPerformed(ActionEvent e) {
-            s = tekstvak.getText();
-            jaartal = Integer.parseInt( s);
-            if ( (jaartal % 4 == 0 && !(jaartal % 100 == 0)) ||
-                    jaartal % 400 == 0 ) {
-                tekst = ""+ jaartal + " is een schrikkeljaar";
-            }
-            else {
-                tekst = ""+ jaartal + " is geen schrikkeljaar";
+            Integer.parseInt(String.valueOf(invoer));
+            invoer = Integer.parseInt(tekstvak.getText());
+            int maand = invoer;
+            switch (maand){
+                case 1:
+                    tekst = "Januari bestaat uit 31 dagen.";
+                    break;
+                case 2:
+                    tekst = "Februari bestaat uit 28 of 29 dagen.";
+                    break;
+                case 3:
+                    tekst = "Maart bestaat uit 31 dagen.";
+                    break;
+                case 4:
+                    tekst = "April bestaat uit 30 dagen.";
+                    break;
+                case 5:
+                    tekst = "Mei bestaat uit 31 dagen.";
+                    break;
+                case 6:
+                    tekst = "Juni bestaat uit 30 dagen.";
+                    break;
+                case 7:
+                    tekst = "Juli bestaat uit 31 dagen.";
+                    break;
+                case 8:
+                    tekst = "Augustus bestaat uit 31 dagen.";
+                    break;
+                case 9:
+                    tekst = "September bestaat uit 30 dagen.";
+                    break;
+                case 10:
+                    tekst = "Oktober bestaat uit 31 dagen.";
+                    break;
+                case 11:
+                    tekst = "November bestaat uit 30 dagen.";
+                    break;
+                case 12:
+                    tekst = "December bestaat uit 31 dagen.";
+                    break;
+                default:
+                    tekst = "kies uit 1-12";
+                    break;
+
             }
             repaint();
         }
     }
+
+    public void paint(Graphics g) {
+        g.drawString("De maand " + tekst, 100, 100);
+    }
+
 }
