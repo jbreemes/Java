@@ -14,7 +14,7 @@ public class Laagste extends Applet {
         tekstvak = new TextField(10);
         tekstvak.addActionListener(new VakListener());
         add(tekstvak);
-        uitkomst = 100;
+        uitkomst = 10000;
 
     }
     public void paint(Graphics g){
@@ -26,12 +26,15 @@ public class Laagste extends Applet {
 
             s = tekstvak.getText();
             getal = Integer.parseInt( s );
-            if (uitkomst > getal){
-                getal = uitkomst;
+            if (getal < uitkomst){
+                uitkomst = getal;
             }
-            else {
+            else{
+
+
 
             }
+
             repaint();
         }
     }

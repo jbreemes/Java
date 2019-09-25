@@ -11,7 +11,7 @@ public class Hoogste extends Applet {
     int uitkomst;
 
     public void init(){
-        tekstvak = new TextField(10);
+        tekstvak = new TextField(5);
         tekstvak.addActionListener(new VakListener());
         add(tekstvak);
         uitkomst = 0;
