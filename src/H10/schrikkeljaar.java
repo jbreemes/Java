@@ -1,4 +1,4 @@
-package Test;
+package H10;
 
 import java.applet.Applet;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class test extends Applet {
+public class schrikkeljaar extends Applet {
 
     TextField tekstvak;
     TextField jaar;
@@ -61,7 +61,7 @@ public class test extends Applet {
                     } else {
                         tekst2 = "bestaat uit 28 dagen.";
                     }
-                break;
+                    break;
                 case 3:
                     tekst = "Maart bestaat uit 31 dagen.";
                     break;
