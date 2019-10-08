@@ -1,10 +1,9 @@
-package Test;
-
+package H12;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
 
-public class test extends Applet {
+public class waarden extends Applet {
     boolean gevonden;
     int[] salaris = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int invoer;
@@ -41,9 +40,10 @@ public class test extends Applet {
             int y = 70;
             if (gevonden) {
                 g.drawString("De waarde = " + invoer + "  De index = " + invoer, x1, y);
-                y += 20;
 
-            } else {
+                y += 20;
+            }
+            else  {
                 g.drawString("De waarde is niet gevonden.", x2, y);
             }
         }

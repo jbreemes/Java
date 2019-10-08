@@ -9,8 +9,6 @@ public class fibonacchi extends Applet {
 
 
     }
-    //for (teller = 0; teller <= 10; teller++) {
-    //y += 20;
 
     public void paint(Graphics g) {
 
@@ -24,17 +22,8 @@ public class fibonacchi extends Applet {
          y += 15;
          c= a+b;
          g.drawString("" + c, 100,y);
-
          a= b;
          b= c;
-
-
-
-
-        }
-
-
-
-
+       }
     }
 }
