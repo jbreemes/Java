@@ -6,7 +6,6 @@ import java.awt.event.*;
 
 public class opdracht126 extends Applet {
 
-
     private boolean gevonden = false;
     private boolean geklikt = false;
     private int[] getal = {100, 300, 500, 700, 900,500,900,600,500,100,500,1620,8888,1622,1621,100, 300, 500, 700, 900,500,900,600,500,100,500,1620,8888,1622,1621};
